@@ -131,5 +131,6 @@ async function chat_with_gpt(prompt) {
 
 
 async function read_api_key() {
-    return "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";
+	# Get API key from https://platform.openai.com/api-keys
+    return "Your API key";
 }
