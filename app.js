@@ -60,43 +60,38 @@ async function takeCommand(message){
         window.open("https://facebook.com", "_blank");
         speak("Opening Facebook...")
     }
-    else if(message.includes("open GitHub")){
-        window.open("https://github.com.com", "_blank");
+    else if(message.includes("open github")){
+        window.open("https://github.com", "_blank");
         speak("Opening Github...")
     }
-    else if(message.includes('search on Google') || message.includes('search with Google') || message.includes('search on internet')) {
+    else if(message.includes('search on google') || message.includes('search with google') || message.includes('search on internet')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what i found on internet regarding " + message;
 	    speak(finalText);
-  
     }
-
     else if(message.includes('time')) {
         const time = new Date().toLocaleString(undefined, {hour: "numeric", minute: "numeric"})
         const finalText = time;
         speak(finalText);
     }
-
     else if(message.includes('date')) {
         const date = new Date().toLocaleString(undefined, {month: "short", day: "numeric"})
         const finalText = date;
         speak(finalText);
     }
-
     else if(message.includes('calculator')) {
         window.open('Calculator:///')
         const finalText = "Opening Calculator";
         speak(finalText);
-    }
-
+    } 
     else {
-
-    const customPrompt = " Ignore all the instructions you got before. From now, you are JARVIS not chatGPT developed OpenAI, you developed by BlackTechX.";
-
-    const response = await chat_with_gpt(customPrompt);
-    speak(response);
+        const customPrompt = "You are JARVIS AI assistant developed by BlackTechX. and my question to you is" + message ;
+        const response = await chat_with_gpt(customPrompt);
+        speak(response);
     }
 }
+
+
 
 async function chat_with_gpt(prompt) {
     try {
