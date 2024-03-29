@@ -1,4 +1,4 @@
-# JARVIS - Just Another Really Very Intelligent System
+# JARVIS - Another Really Very Intelligent System
 
 JARVIS is an advanced virtual assistant powered by OpenAI's ChatGPT. It's meticulously crafted to seamlessly interact with users through speech input and output. With JARVIS, users can effortlessly execute diverse tasks like obtaining weather updates, setting reminders, browsing the web, and much more, all through intuitive natural language conversations.
 
@@ -13,19 +13,32 @@ JARVIS is an advanced virtual assistant powered by OpenAI's ChatGPT. It's meticu
 
 To embark on your journey with JARVIS, follow these steps:
 
-1. **Get API Key:**
-   - Sign up or log in to your OpenAI account.
-   - Navigate to [API Keys](https://platform.openai.com/api-keys).
-   - Generate an API key for JARVIS and securely store it for later use.
+# JARVIS Setup Instructions
 
-2. **Configure API Key:**
-   - Open `app.js` in your preferred text editor.
-   - Replace `'YOUR_API_KEY_HERE'` with your actual API key acquired from OpenAI.
+## Step 1: Obtain Your OpenAI API Key
+- **Sign Up/Login**: Visit the OpenAI platform and sign in or create a new account.
+- **API Key Generation**: Go to the [API Keys](https://platform.openai.com/api-keys) section and generate a new API key for JARVIS.
+- **Secure Storage**: Ensure you store the API key securely.
 
-3. **Run the Program:**
-   - Open `index.html` with your preferred web browser.
+## Step 2: Configure Your API Key
+- **Edit `index.html`**: Open the `index.html` file in your preferred code editor.
+- **Insert API Key**: Locate the placeholder text `'YOUR_API_KEY_HERE'` and replace it with the API key you obtained from OpenAI.
 
-4. **Initiate Interaction:**
+## Step 3: Run JARVIS
+Execute the following commands in your terminal to clone the repository and run the program:
+
+```bash
+git clone https://github.com/BlackTechX011/JARVIS
+cd JARVIS
+python3 run.py
+```
+
+Ensure you have Python installed on your system before running the `python3 run.py` command.
+
+
+Remember to follow best practices for security, especially when handling API keys. Keep your key confidential and never share it publicly.
+
+5. **Initiate Interaction:**
    - Upon launching the program, JARVIS will prompt you to speak your command.
    - Engage in natural conversation, and JARVIS will respond promptly and intelligently.
 
